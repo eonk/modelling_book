@@ -8,11 +8,11 @@ In criminology, very often you will be interested in binary outcomes (e.g., vict
 
 With logistic regression we are modelling the probability of belonging to one of the levels in the binary outcome. For any combination of values for our predictor variables the model will estimate a probability of presenting the outcome of interest. To fit this model we use maximum likelihood. This handout does not focuses in explaining the mathematics behind the method. Those are important but in this introductory module we only provide an introduction to the technique.
 
-To illustrate logistic regression we are going to use the `Arrests` data from the `effects` package. You can obtain details about this dataset and the variables included by using `help(Arrests, package="effects")`. If you don't have that package you will need to install it and load it.
+To illustrate logistic regression we are going to use the `Arrests` data from the `carData` package. You can obtain details about this dataset and the variables included by using `help(Arrests, package="carData")`. If you don't have that package you will need to install it and load it.
 
 ```{r}
-library(effects)
-data(Arrests, package="effects")
+library(carData)
+data(Arrests, package="carData")
 ```
 
 This data includes information on police treatment of individuals arrested in Toronto for possession of marihuana. We are going to model variation on `released`, a factor with two levels indicating whether the arrestee was released with a summons.  In this case the police could:
